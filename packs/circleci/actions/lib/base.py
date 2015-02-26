@@ -14,5 +14,5 @@ BASE_URL = 'https://github.com'
 class BaseCircleciAction(Action):
     def __init__(self, config):
         super(BaseCircleciAction, self).__init__(config=config)
-        self.cci_token = os.environ.get('CCI_TOKEN')
+        self.cci_token = config.get("cci_token")
         self._client = circleclient.CircleClient(self.cci_token)
