@@ -1,0 +1,22 @@
+---
+name: trigger
+runner_type: run-python
+description: "trigger a CircleCI build"
+enabled: true
+entry_point: 'trigger.py'
+parameters:
+  org:
+    type: string
+    description: Source URI to clone a repository from
+    required: true
+    position: 1
+  repo:
+    type: string
+    description: Requested git ref to check the repository out to.
+    default: master
+    position: 2
+  ref:
+    type: string
+    description: Location on the filesystem to clone the repository to
+    required: true
+    position: 3

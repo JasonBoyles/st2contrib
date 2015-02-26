@@ -1,0 +1,8 @@
+---
+name : cci
+description : st2 content pack containing CircleCI integrations
+keywords:
+  - cci
+version : 0.1
+author : jgb
+email : jason.boyles@rackspace.com
